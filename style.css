@@ -113,19 +113,24 @@ li{
     color: var(--cyl);
     
 }
+.inputarea{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .textbox input{
     font-size: 1rem;
     background:transparent;
     color: var(--cyl);
     border-bottom: 3px solid var(--cyl);
     padding: 8px 4px;
-    width: 89.7%;
+    width: 80%;
     outline: none;
     font-weight: 700;
 
 }
 .textbox button{
-    width: 10%;
+    width: 15%;
     background-color: var(--cyl);
     padding: 11px 0;
     font-size: 1rem;
@@ -168,4 +173,7 @@ li{
 }
 #totalz {
     font-size: calc(2rem + 2vw);
+}
+label{
+    margin-left: 2.5vw;
 }
