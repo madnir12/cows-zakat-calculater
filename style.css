@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* adding variables */
+:root{
+    --cyl: #F8D210;
+    --cr: #FA26A0;
+}
+.bdcontainer{
+    animation: bd1 0.75s;
+display: none;
+background: url("./bg.jpg");
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+width: 100vw;
+height: 100vh;
+position: relative;
+}
+.blackwall{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(8, 0, 0, 0.3);
+    z-index: 99;
+
+}
+@keyframes bd1 {
+    from{
+        opacity: 0;
+        transform: rotateX(-10deg);
+    }
+    to{
+        opacity: 1;
+        transform: rotateX(0);
+    }
+}
+.mainbox{
+    display: none;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.text p{
+    margin-bottom: 1rem;
+    font-size: calc(1vw + 1rem);
+
+}
+.text h2{
+    font-size: calc(3vw + 3rem);
+}
+.text button{
+    padding: 10px 23px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: #f6d8ac;
+
+}
+.mainbox{
+    width: 90vw;
+    height: 90vh;
+    background-color: rgba(41, 41, 41,0.7);
+    border: 1px solid var(--cr);
+    border-radius: 10px;
+    padding: 0 2%;
+}
+.ul{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    gap: 3rem;
+}
+li{
+    font-size: 2rem;
+    color: var(--cr);
+    font-weight: 700;
+    padding: 12px 0;
+}
+.stepActive{
+    color: var(--cyl);
+    border-bottom: 3px solid var(--cyl);
+    
+}
+.goldbox {
+    color: gold;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+    gap: 1rem;
+}
+.logo i,.logo h2{
+    font-size: calc(1vw + 2rem);
+}
+.textbox label{
+    color: var(--cyl);
+    
+}
+.textbox input{
+    font-size: 1rem;
+    background:transparent;
+    color: var(--cyl);
+    border-bottom: 3px solid var(--cyl);
+    padding: 8px 4px;
+    width: 89.7%;
+    outline: none;
+    font-weight: 700;
+
+}
+.textbox button{
+    width: 10%;
+    background-color: var(--cyl);
+    padding: 11px 0;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+.silverbox i, .silverbox h2{
+    color: silver;
+
+}
+.silverbox,.cashbox{
+    display: none;
+}
+.resultd h2,.resultd i{
+    font-size: calc(2rem + 2vw);
+    margin-right: 2rem;
+
+}
+.resultd{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    padding: 8vh 0;
+    
+    gap: 2rem;
+}
+.rc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.resultd span{
+    display: flex;
+}
+.total{
+    color: var(--cyl);
+
+}
+#totalz {
+    font-size: calc(2rem + 2vw);
+}
