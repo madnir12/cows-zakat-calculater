@@ -177,3 +177,36 @@ li{
 label{
     margin-left: 2.5vw;
 }
+@media only screen and (max-width:944px){
+   .text h2{
+    font-size: calc(1rem + 4vw);
+   }
+   .text p{
+    font-size: 1rem;
+   }
+   .inputarea{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+   }
+   .inputarea input,.inputarea button{
+    width: 100%;
+
+   }
+   .logo h2{
+    font-size: calc(1.1rem + 1vw);
+   }
+   .logo i{
+    font-size: calc(1.1rem + 1vw);
+   }
+   .resultd{
+    display: grid;
+    grid-template-columns: 1fr;
+   }
+   .resultd div{
+    border: 2px solid var(--cyl);
+    border-radius: 10px;
+    padding: 20px 0;
+   }
+   
+}
